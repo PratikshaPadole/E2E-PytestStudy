@@ -1,9 +1,9 @@
 import pytest
 import requests
 
-class REQUEST_Method:
+class Test_REQUEST_Method:
 
-    def testcase_01_post(self):
+    def test_case_01_post(self):
         payload={
             "name":"prati_jha"  ,
             "job":"Senior_test_engineer"
@@ -11,6 +11,6 @@ class REQUEST_Method:
         resp=requests.post("https://reqres.in/api/users",data=payload)
         print(resp.json())
         code=resp.status_code
-        assert code == 200 ,"Not Created"
+        assert code == 201 ,"Not Created"
 
 
