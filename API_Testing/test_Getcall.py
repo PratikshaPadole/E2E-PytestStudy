@@ -18,7 +18,7 @@ class Test_case:
         print(Json_Resp['data'][0]["email"])
         assert  (Json_Resp['data'][0]['email']).endswith("@reqres.in"),"Email does not Match"
         print(Json_Resp['data'][1]['first_name'])
-        assert Json_Resp['data'][1]['first_name']=="Lindsay",'Please Enter valide name '
+        assert Json_Resp['data'][1]['first_name']=="prati",'Please Enter valide name '
 
 
     def test_case_002(self):
